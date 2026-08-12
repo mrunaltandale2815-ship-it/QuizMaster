@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster | Quiz Result</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="color: white;">Quiz<span style="color: rgb(118, 2, 194);">Master</span></h1>
+            </nav>
+    </header>
+    <section class="result-page">
+        <div class="result-content">
+           
+            <p>You have completed the quiz</p>
+        </div>
+
+        <div class="result-card">
+            <div class="left">
+                <div class="progress-circle" id="progressCircle">
+                    <h1 class="icon-center" id="percentage">0%</h1>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Your Score</h1>
+                <hr>
+                <h1><span id="score"></span> / <span id="totalQuestions"></span></h1>
+                <div id="resultStatus" class="result-status">
+                <span id="statusText"></span>
+            </div>
+        
+            </div>
+            
+        </div>
+        <div class="review-section">
+        <div class="review">
+                <h3>Total Questions</h3>
+                <h2><span id="totalDisplay"></span></h2>
+        </div>
+        <div class="review">
+                <h3>Correct Answers</h3>
+                <h2><span id="correctAnswers"></span></h2>
+        </div>
+        <div class="review">
+                <h3>Wrong Answers</h3>
+                <h2 style="color: red;"><span id="wrongAnswers"></span></h2>
+        </div>
+        <div class="review">
+                <h3>Time Taken</h3>
+                <h2><span id="timeTaken"></span></h2>
+        </div>
+        </div>
+        </div>
+
+        <button class="review-btn"><a href="review.html">Review Answers</a></button>
+        <button class="back"><a href="index.html">Back To Home</a></button>
+    </section>
+    <script src="js/result.js"></script>
+    <script src="js/storage.js"></script>
+
+</body>
+</html>

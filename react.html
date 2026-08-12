@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Quiz</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body data-category="react">
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+         <nav>
+            <h1 style="color: white;">Quiz<span style="color: rgb(118, 2, 194);">Master</span></h1>
+            <ul>
+                <li><button class="submit-btn" id="submitQuiz" type="button">Submit</button></li>
+            </ul>
+        </nav>
+    
+       
+    </header>
+
+
+    <!-- Progress Bar -->
+      <div class="quiz-info">
+
+            <div class="question-count">
+                Question <span id="currentQuestion">1</span> / 10
+            </div>
+
+            <div class="timer">
+                <span>Time Left</span>
+                <h3 id="time">5:00</h3>
+                <script>
+                    
+                </script>
+            </div>
+
+        </div>
+
+
+    <div class="progress-area">
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ============== MAIN CONTENT ============== -->
+
+    <main>
+
+        <!-- Left Side -->
+
+        <section class="question-section">
+
+            <div class="question-card">
+
+                <h2>
+                    What does HTML stand for?
+                </h2>
+
+
+                <!-- Option -->
+
+                <div class="option selected">
+
+                    <div class="option-left">
+
+                        <span class="circle">A</span>
+
+                        <p>Hyper Text Markup Language</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+
+
+                <div class="option">
+
+                    <div class="option-left">
+
+                        <span class="circle">B</span>
+
+                        <p>High Text Machine Language</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="option">
+
+                    <div class="option-left">
+
+                        <span class="circle">C</span>
+
+                        <p>Hyperlinks and Text Markup Language</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="option">
+
+                    <div class="option-left">
+
+                        <span class="circle">D</span>
+
+                        <p>Home Tool Markup Language</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button class="prev-btn">
+                    Previous
+                </button>
+
+                <button class="next-btn">
+                    Next
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Right Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="side-card">
+
+                <h3>Question Navigation</h3>
+
+                <div class="question-grid">
+
+                    <button class="current">1</button>
+
+                    <button>2</button>
+
+                    <button>3</button>
+
+                    <button>4</button>
+
+                    <button>5</button>
+
+                    <button>6</button>
+
+                    <button>7</button>
+
+                    <button>8</button>
+
+                    <button>9</button>
+
+                    <button>10</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="side-card">
+
+                <h3>Status</h3>
+
+                <div class="status">
+
+                    <p>
+                        <span class="dot answered-dot"></span>
+                        Answered
+                    </p>
+
+                    <p>
+                        <span class="dot current-dot"></span>
+                        Current
+                    </p>
+
+                    <p>
+                        <span class="dot not-dot"></span>
+                        Not Answered
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+            
+        </aside>
+
+    </main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

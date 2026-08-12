@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Answers | QuizMaster</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav>
+
+            <h1 style="color: white;">
+                Quiz<span style="color: rgb(118, 2, 194);">Master</span>
+            </h1>
+
+            <ul>
+
+                <li class="login-btn">
+                    <a href="index.html">Back To Home</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="filter-section">
+
+    <button class="filter-btn active" data-filter="all">
+        All (<span id="allCount">0</span>)
+    </button>
+
+    <button class="filter-btn" data-filter="correct">
+        Correct (<span id="correctCount">0</span>)
+    </button>
+
+    <button class="filter-btn" data-filter="wrong">
+        Wrong (<span id="wrongCount">0</span>)
+    </button>
+
+</section>
+
+    <!-- ================= MAIN ================= -->
+
+    <section class="review-container">
+
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <div class="question-list" id="questionList">
+
+            <!-- JavaScript will create questions here -->
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="review-card" id="reviewCard">
+
+            <!-- JavaScript will display selected question here -->
+
+        </div>
+
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/questions.js"></script>
+    <script src="js/review.js"></script>
+
+</body>
+
+</html>

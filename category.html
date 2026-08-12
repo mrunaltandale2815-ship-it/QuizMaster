@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster | Interactive-quiz</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/c592cfa614.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="color: white;">Quiz<span style="color: rgb(118, 2, 194);">Master</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="category.html">Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-category">
+        
+        <h2>Choose a Category </h2>
+        <p>Select Category to Start quiz. </p>
+        <section class="category-grid">
+<!--
+                <a href="web.html" class="category-link" data-category="web">
+                    <div class="category-card">
+                        <i class="fa-solid fa-code"></i><br><br>
+                        <h3>Web Technology</h3>
+                        <p>10 Questions</p>
+                    </div>
+                </a>
+-->
+            <div class="category-card">
+                
+                <i class="fa-solid fa-code"></i><br><br>
+                <h3>Web Technology</h3>
+                <p>10 Questions</p>
+                <button><a href="web.html" class="category-link" data-category="web">Start Quiz</a></button>
+            
+            </div>
+
+            <div class="category-card">
+            
+                <i class="fa-solid fa-chart-column"></i><br><br>
+                <h3>Data Science</h3>
+                <p>10 Questions</p>
+                <button><a href="ds.html" class="category-link" data-category="ds">Start Quiz</a></button>
+
+            </div>
+
+            <div class="category-card">
+            
+                <i class="fa-brands fa-react"></i><br><br>
+                <h3>React</h3>
+                <p>10 Questions</p>
+                <button><a href="react.html" class="category-link" data-category="react">Start Quiz</a></button>
+
+            </div>
+
+            <div class="category-card">
+                
+                <i class="fa-brands fa-js"></i><br><br>
+                <h3>Javascript</h3>
+                <p>10 Questions</p>
+                <button><a href="js.html" class="category-link" data-category="js">Start Quiz</a></button>
+
+            </div>
+
+            <div class="category-card">
+                
+                <i class="fa-brands fa-python"></i><br><br>
+                <h3>Python</h3>
+                <p>10 Questions</p>
+                <button><a href="python.html" class="category-link" data-category="python">Start Quiz</a></button>
+        
+            </div>
+
+            <div class="category-card">
+                
+                <i class="fa-solid fa-database"></i><br><br>
+                <h3>SQL</h3>
+                <p>10 Questions</p>
+                <button><a href="sql.html" class="category-link" data-category="sql">Start Quiz</a></button>
+
+            </div>
+
+        </section>
+
+    </section>
+    <script src="js/storage.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
